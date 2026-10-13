@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>صدتك | الجهاز الشبابي لنادي السد</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px 16px;
+            font-family: Tahoma, Arial, sans-serif;
+            color: white;
+
+            background:
+                radial-gradient(
+                    ellipse at top,
+                    #284d6b 0%,
+                    transparent 60%
+                ),
+                linear-gradient(
+                    145deg,
+                    #081a2b,
+                    #102b46
+                );
+        }
+
+        .card {
+            width: 100%;
+            max-width: 520px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #d5ae63;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 22px 70px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            padding: 30px 22px 16px;
+        }
+
+        .organization {
+            margin-bottom: 8px;
+            color: #d5ae63;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #fff8ed;
+            font-size: clamp(42px, 10vw, 64px);
+            font-weight: 900;
+        }
+
+        .divider {
+            width: 72px;
+            height: 3px;
+            margin: 18px auto;
+            border-radius: 10px;
+            background: #d5ae63;
+        }
+
+        .portrait {
+            display: block;
+            width: calc(100% - 40px);
+            max-width: 390px;
+            max-height: 480px;
+            object-fit: cover;
+            object-position: center top;
+            margin: 0 auto;
+            border: 3px solid #d5ae63;
+            border-radius: 16px;
+        }
+
+        .message {
+            padding: 26px 24px 30px;
+        }
+
+        .message p {
+            margin: 0;
+            color: #fff8ed;
+            font-size: clamp(19px, 4.5vw, 25px);
+            font-weight: bold;
+            line-height: 1.9;
+        }
+
+        .signature {
+            margin-top: 24px;
+            color: #d5ae63;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 380px) {
+            .header {
+                padding-top: 24px;
+            }
+
+            .message {
+                padding-right: 18px;
+                padding-left: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="card">
+
+        <header class="header">
+         
+
+            <h1>صدتك</h1>
+
+            <div class="divider"></div>
+        </header>
+
+        <!-- الصورة المرفقة -->
+        <img
+            class="portrait"
+            src="data:image/jpeg;base64,PASTE_IMAGE_BASE64_HERE"
+            alt="الصورة التوعوية"
+        >
+
+        <section class="message">
+
+            <p>
+                جاك فضول تعرف الي فالكيو ار كود صح ؟
+                <br>
+                المهم مره ثانيه لاتسوي سكان حق اي كود انت مب متأكد من مصدره
+            </p>
+
+            <div class="signature">
+                مع تحيات الجهاز الشبابي لنادي السد
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
